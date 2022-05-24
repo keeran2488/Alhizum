@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Remittance</title>
+</head>
+<body>
+    <div class="min-h-screen flex flex-col justify-between bg-background">
+        <!-- Navbar -->
+        <nav class="relative container mx-auto p-6">
+            <!-- Flex Container -->
+            <div class="flex items-center justify-between font-smallHeading">
+                <!-- Logo -->
+                <div class="p-2">
+                    LOGO - Company Name
+                </div>
+                <!-- Menu Items -->
+                <div class="hidden lg:flex space-x-4 text-base">
+                    <div class="dropdown inline-block relative">
+                        <button class="circle border-buttonBorder p-2 rounded inline-flex items-center hover:text-white">
+                        <span class="mr-1">Services</span>
+                        <svg class="fill-current mt-1 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+                        </button>
+                        <div class="dropdown-menu z-10 absolute hidden text-sm text-black pt-1 w-48">
+                            <a class="bg-white hover:bg-hover hover:text-white py-2 px-4 block" href="#">Tours and travells</a>
+                            <a class="bg-white hover:bg-hover hover:text-white py-2 px-4 block" href="#">Remittance</a>
+                            <a class="bg-white hover:bg-hover hover:text-white py-2 px-4 block" href="./education.html">Education consultancy</a>
+                        </div>
+                    </div>
+                    <a href="#" class="circle p-2 rounded hover:text-white">QA</a>
+                    <a href="#" class="circle p-2 rounded hover:text-white">About</a>
+                    <a href="./contact.html" class="circle p-2 rounded hover:text-white">Contact us</a>
+                </div>
+                <!-- Hamburger Icon -->
+                <button id="menu-btn" class="block hamburger lg:hidden focus:outline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+            
+
+            <!-- Mobile Menu -->
+            <div class="lg:hidden font-smallHeading">
+                <div id="menu" class="absolute flex-col items-start hidden self-end px-8 py-8 space-y-6 bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                    <div class="dropdown inline-block relative">
+                        <button id="dropdown-btn" class="border-buttonBorder p-2 rounded inline-flex items-center">
+                            <span class="mr-1 font-bold">Services</span>
+                            <svg id="bottom-arrow" class="fill-current mt-1 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+                        </button>
+                        <div id="dropdown-menu" class="dropdown-menu hidden text-sm text-black w-48">
+                            <a class="bg-white py-2 px-4 block" href="#">Remittance</a>
+                            <a class="rounded-b bg-white py-2 px-4 block" href="#">Tours and travells</a>
+                            <a class="rounded-t bg-white py-2 px-4 block" href="./education.html">Education consultancy</a>
+                        </div>
+                    </div>
+                    <a href="#" class="p-2 rounded font-bold">QA</a>
+                    <a href="#" class="p-2 rounded font-bold">About</a>
+                    <a href="./contact.html" class="p-2 rounded font-bold">Contact us</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Content Wrapper -->
+        <div class="container p-5 md:px-6 mx-auto mt-5">
+            <div class="flex justify-end flex-row">
+                <div class="flex-1 w-1/2">
+                    <p class="text-4xl md:text-5xl text-bold font-heading">Send money safely and reliably</p><br>
+                    <div class="block sm:hidden">
+                        <img src="./img/remittance-1.jpg" alt="" class="object-cover h-5/6 w-full mb-2">
+                    </div>
+                    <p class="text-lg font-body text-lightGray">Make a great plan and experience better and flawless steps in choosing better instituions with us.<br><br>
+                        North Italy has the climate of the temperature region of Europe; Central Italy is genial and sunny, while the south is almost tropical.</p><br>
+                    <a href="#" class="text-lg font-heading border border-2 rounded-tl-full rounded-bl-full rounded-br-full border-buttonBorder px-3 hover:text-white hover:bg-buttonBorder transition-all duration-200">Learn More</a>
+                </div>
+                <div class="hidden md:block ml-5 flex-1 w-1/2">
+                    <img src="./img/remittance-1.jpg" alt="people looking towards laptop" class="object-cover h-5/6 w-full">
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-8 md:my-14">
+
+        <!-- Our Features -->
+        
+        <div class="container p-5 md:px-6 mx-auto">
+            <div class="md:mr-5">
+                <p class="text-4xl font-heading">Our features</p><br>                       
+            </div>
+            <div class="flex flex-col md:flex-row justify-start mt-10">
+                <div class="flex md:w-1/2">
+                    <img src="./img/remittance-2.png" alt="" class="w-24 h-24">
+                    <div class="flex flex-col w-fit ml-10">
+                        <p class="text-2xl font-heading">Bank deposit</p><br><br>
+                        <p class="text-lg font-body text-lightGray">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    </div>  
+                </div>
+                <div class="flex mt-[4.5rem] md:mt-0 md:w-1/2 md:ml-10">
+                    <img src="./img/remittance-3.png" alt="" class="w-24 h-24">
+                    <div class="flex flex-col ml-10">
+                        <p class="text-2xl font-heading">No hidden fees</p><br><br>
+                        <p class="text-lg font-body text-lightGray">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    </div>    
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-start mt-[4.5rem]">
+                <div class="flex md:w-1/2">
+                    <img src="./img/remittance-4.png" alt="" class="w-24 h-20">
+                    <div class="flex flex-col ml-10">
+                        <p class="text-2xl font-heading">Instant transfer</p><br><br>
+                        <p class="text-lg font-body text-lightGray">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    </div>
+                </div>
+                <div class="flex mt-[4.5rem] md:mt-0 md:w-1/2 md:ml-10">
+                    <div class="h-20 w-24 lg:w-24 lg:h-24">
+                        <img src="./img/remittance-5.png" alt="" class="lg:w-20 h-20">
+                    </div>
+                    <div class="flex flex-col ml-10 w-[208px] md:w-[180px] lg:w-[480px]">
+                        <p class="text-2xl font-heading">Safe and secure</p><br><br>
+                        <p class="text-lg font-body text-lightGray">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-16">
+
+        <!-- Partners -->
+
+        <div class="relative container p-5 md:px-6 mx-auto">
+            <div>
+                <p class="text-4xl font-heading">Partners</p><br>
+            </div>
+            <div class="flex justify-center">
+                <div class="relative h-28 w-full pt-4 px-16 border-[0.25pt] border-black rounded-2xl bg-[#F2F2F2]">
+                    <ul class="control" id="custom-control">
+                        <li class="prev">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </li>
+                        <li class="next">
+                            <i class="fa-solid fa-chevron-right"></i>
+                          </li>
+                    </ul>
+                    <div class="my-slider">
+                        <img src="./img/cityexpress.png" alt="" class="h-20 w-32">
+                        <img src="./img/himalremit.png" alt="" class="h-20 w-32">
+                        <img src="./img/IME.png" alt="" class="h-20 w-32">
+                        <img src="./img/moneygram.png" alt="" class="h-20 w-32">
+                        <img src="./img/prabhumoney.png" alt="" class="h-20 w-32">
+                        <img src="./img/western.png" alt="" class="h-20 w-32">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <hr class="my-14">
+
+        <div class="relative container p-5 md:px-6 mx-auto">
+            <div class="flex justify-center p-5">
+                <img src="./img/mobile-money.png" alt="" class="self-end h-[60px] w-[60px] mr-5">
+                <p class="text-2xl font-heading self-end">Mobile money networks</p><br>
+            </div>
+            <div class="flex justify-center">
+                <div class="relative h-28 w-full lg:w-[620px] pt-4 px-16 border-[0.25pt] border-black rounded-2xl bg-[#F2F2F2]">
+                    <ul class="control" id="custom-control-2">
+                        <li class="prev">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </li>
+                        <li class="next">
+                            <i class="fa-solid fa-chevron-right"></i>
+                          </li>
+                    </ul>
+                    <div class="my-slider-2">
+                        <img src="./img/cityexpress.png" alt="" class="h-20 w-32">
+                        <img src="./img/himalremit.png" alt="" class="h-20 w-32">
+                        <img src="./img/IME.png" alt="" class="h-20 w-32">
+                        <img src="./img/moneygram.png" alt="" class="h-20 w-32">
+                        <img src="./img/prabhumoney.png" alt="" class="h-20 w-32">
+                        <img src="./img/western.png" alt="" class="h-20 w-32">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-10">
+
+        <div class="relative container mx-auto p-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="md:w-1/2">
+                    <div class="font-smallHeading">
+                        LOGO - Company Name
+                    </div>
+                    <p class="text-lightFont font-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti odit distinctio aliquid, fugiat illo commodi qui beatae sed numquam voluptatibus ipsa debitis saepe. Perspiciatis deserunt a, modi dolorum tempora repellendus.
+                    </p>
+                </div>
+                <div class="md:mx-5 flex flex-col md:flex-row">
+                    <div class="md:mx-10 my-10 md:my-0 flex flex-col">
+                        <h2 class="font-smallHeading font-bold">Services</h2>
+                        <a href="#" class="text-lightFont font-body hover:text-hover">Tours and travells</a>
+                        <a href="./remittance.html" class="text-lightFont font-body hover:text-hover">Remittance</a>
+                        <a href="./education.html" class="text-lightFont font-body hover:text-hover">Education consultancy</a>
+                    </div>   
+                    <div class="md:mx-auto">
+                        <h2 class="font-smallHeading font-bold">Info</h2>
+                        <p class="text-lightFont font-body">
+                            infoalhaizum.com<br>
+                            +977-xxx<br>
+                            xyz@gmail.com<br>
+                            Baneshowr, Kathmandu
+                        </p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="p-2 bg-lightGray text-white">
+            <div class="lg:container lg:mx-auto flex flex-col md:flex-row items-center justify-between">   
+                <!-- Footer Items -->
+                <div class="flex flex-wrap justify-center stroke">
+                    <a href="#" class="hover:text-hover">About us</a>
+                    <a href="./contact.html" class="ml-10 hover:text-hover">Contact us</a>
+                    <a href="#" class="ml-10 hover:text-hover">Privacy policy</a>
+                    <a href="#" class="md:ml-10 py-5 md:py-0 hover:text-hover">Terms and conditions</a>
+                </div>
+                <div class="flex space-x-6 mt-5 md:mt-0">
+                    &copy; 2022 Alhizum - All Rights Reserved
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="js/input.js"></script>
+</body>
+</html>

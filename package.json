@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "tailwindcss": "^3.0.24",
+    "tiny-slider": "^2.9.4",
+    "tw-elements": "^1.0.0-alpha12"
+  }
+}

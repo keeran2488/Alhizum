@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "SegoeUIVF";
+    src: url("../fonts/SegoeUIVF.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Sen-Regular";
+    src: url("../fonts/Sen-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+/* Circle Animation - Navbar */
+.circle {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+.circle:after {
+    display: block;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '.';
+    color: transparent;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    background: transparent;
+  }
+.circle:hover:after {
+    -webkit-animation: circle 0.8s ease-in forwards;
+  }
+
+@-webkit-keyframes circle {
+    0% {
+        width: 1px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        height: 1px;
+        z-index: -1;
+        background: #2490d8;
+        border-radius: 100%;
+    }
+    100% {
+        background: #2490d8;
+        height: 5000%;
+        width: 5000%;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 0;
+    }
+}
+
+/*  Underline Stroke - Footer  */
+.stroke a {
+    display: inline-block;
+    position: relative;
+}
+  
+.stroke a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #2490d8;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.stroke a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Dropdown effect */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Hamburger */
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: #000;
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+
+.hamburger-middle {
+    transform: translateY(7px);
+}
+
+.hamburger-bottom {
+    transform: translateY(14px);
+}
+
+.open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+
+.open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+    display: none;
+}
+
+.open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+/* #bottom-arrow{
+    transform: rotate(-90deg);
+} */
+
+
+/* Slider controls */
+.control {
+    list-style: none;
+}
+
+.control li {
+    position: absolute;
+    z-index: 99;
+    color: white;
+    transform: translateY(80%);
+    padding: 3px 10px;
+    border-width: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.fa-solid{
+    color: black;
+}
+
+/* .control li:hover {
+    background: #000;
+} */
+
+.control li.prev {
+    left: 10px;
+}
+
+.control li.next {
+    right: 10px;
+}
+
+/* SVG */
+
+.svg1{
+    transform: translateY(80%);
+    left: 200px;
+}
+
+.svg2{
+    transform: translateY(150%);
+    right: 230px;
+}

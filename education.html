@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Education consultancy</title>
+</head>
+<body>
+    <div class="min-h-screen flex flex-col justify-between bg-background">
+        <!-- Navbar -->
+        <nav class="relative container mx-auto p-6">
+            <!-- Flex Container -->
+            <div class="flex items-center justify-between font-smallHeading">
+                <!-- Logo -->
+                <div class="p-2">
+                    LOGO - Company Name
+                </div>
+                <!-- Menu Items -->
+                <div class="hidden lg:flex space-x-4 text-base">
+                    <div class="dropdown inline-block relative">
+                        <button class="circle border-buttonBorder p-2 rounded inline-flex items-center hover:text-white">
+                        <span class="mr-1">Services</span>
+                        <svg class="fill-current mt-1 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+                        </button>
+                        <div class="dropdown-menu z-10 absolute hidden text-sm text-black pt-1 w-48">
+                            <a class="bg-white hover:bg-hover hover:text-white py-2 px-4 block" href="#">Tours and travells</a>
+                            <a class="bg-white hover:bg-hover hover:text-white py-2 px-4 block" href="./remittance.html">Remittance</a>
+                            <a class="bg-white hover:bg-hover hover:text-white py-2 px-4 block" href="./education.html">Education consultancy</a>
+                        </div>
+                    </div>
+                    <a href="#" class="circle p-2 rounded hover:text-white">QA</a>
+                    <a href="#" class="circle p-2 rounded hover:text-white">About</a>
+                    <a href="./contact.html" class="circle p-2 rounded hover:text-white">Contact us</a>
+                </div>
+                <!-- Hamburger Icon -->
+                <button id="menu-btn" class="block hamburger lg:hidden focus:outline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+            
+
+            <!-- Mobile Menu -->
+            <div class="lg:hidden font-smallHeading">
+                <div id="menu" class="absolute flex-col items-start hidden self-end px-8 py-8 space-y-6 bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                    <div class="dropdown inline-block relative">
+                        <button id="dropdown-btn" class="border-buttonBorder p-2 rounded inline-flex items-center">
+                            <span class="mr-1 font-bold">Services</span>
+                            <svg id="bottom-arrow" class="fill-current mt-1 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+                        </button>
+                        <div id="dropdown-menu" class="dropdown-menu hidden text-sm text-black w-48">
+                            <a class="bg-white py-2 px-4 block" href="./remittance.html">Remittance</a>
+                            <a class="rounded-b bg-white py-2 px-4 block" href="#">Tours and travells</a>
+                            <a class="rounded-t bg-white py-2 px-4 block" href="./education.html">Education consultancy</a>
+                        </div>
+                    </div>
+                    <a href="#" class="p-2 rounded font-bold">QA</a>
+                    <a href="#" class="p-2 rounded font-bold">About</a>
+                    <a href="./contact.html" class="p-2 rounded font-bold">Contact us</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Content Wrapper -->
+        <div class="container p-5 md:px-4 mx-auto mt-5">
+            <div class="flex justify-end flex-row p-2">
+                <div class="flex-1 w-1/2">
+                    <p class="text-4xl md:text-5xl text-bold font-heading">Making Studying<br>Experience More Valuable</p><br>
+                    <div class="block sm:hidden">
+                        <img src="./img/1.jpg" alt="people looking towards laptop" class="object-cover h-5/6 w-full mb-2">
+                    </div>
+                    <p class="text-lg font-body text-lightGray">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, laboriosam architecto. Velit, quaerat reprehenderit numquam delectus sint omnis facere quam adipisci distinctio consectetur. Labore, vero commodi! Tempore ipsum laborum molestias?</p><br>
+                    <p class="text-lg font-body text-lightGray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dicta reiciendis impedit autem earum ratione nemo saepe optio aut tenetur doloribus, fugit accusamus distinctio commodi? Minus necessitatibus molestiae consequuntur labore!</p><br><br>
+                    <a href="#" class="text-lg font-heading border border-2 rounded-tl-full rounded-bl-full rounded-br-full border-buttonBorder px-3 hover:text-white hover:bg-buttonBorder transition-all duration-200">Learn More</a>
+                </div>
+                <div class="hidden md:block ml-5 flex-1 w-1/2">
+                    <img src="./img/1.jpg" alt="people looking towards laptop" class="object-cover h-5/6 w-full">
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-8 md:my-16">
+
+        <!-- Cards -->
+        <div class="flex flex-wrap container mx-auto p-5 md:px-6 justify-between">
+            <div class="flex-initial bg-white rounded-lg p-4 md:w-80 lg:w-96 drop-shadow-md lg:mr-5 mt-5">
+                <div class="flex justify-center">
+                    <img src="./img/11.png" alt="" class="h-64 mb-5">
+                </div>
+                <p class="flex justify-center text-base font-smallHeading">Free</p>
+                <p class="flex justify-center text-base font-smallHeading"><span class="text-lg font-semibold">IELTS & PTE </span> &nbsp; classes</p>
+                <p class="font-body text-lg text-lightGray mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, deserunt aperiam mollitia officiis voluptatibus veniam expedita nihil voluptatum ratione quae doloremque quasi recusandae sint atque perspiciatis dolores totam a dolore.</p>
+            </div>
+            <div class="flex-initial bg-white rounded-lg p-4 md:w-80 lg:w-96 drop-shadow-md lg:mr-5 mt-5">
+                <div class="flex justify-center">
+                    <img src="./img/12.png" alt="" class="h-64 mb-5">
+                </div>
+                <p class="flex justify-center text-base font-smallHeading">Free</p>
+                <p class="flex justify-center text-base font-smallHeading">weekly &nbsp;<span class="text-lg font-semibold">Mocktest </span></p>
+                <p class="font-body text-lg text-lightGray mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, deserunt aperiam mollitia officiis voluptatibus veniam expedita nihil voluptatum ratione quae doloremque quasi recusandae sint atque perspiciatis dolores totam a dolore.</p>
+            </div>
+            <div class="flex-initial bg-white rounded-lg p-4 md:w-80 lg:w-96 drop-shadow-md mt-5">
+                <div class="flex justify-center">
+                    <img src="./img/13.png" alt="" class="h-64 mb-5">
+                </div>
+                <p class="flex justify-center text-lg font-semibold font-smallHeading">Visa consulting</p>
+                <p class="flex justify-center text-base font-smallHeading"><span class="text-lg font-semibold">services </span> &nbsp; with</p>
+                <p class="flex justify-center text-base font-smallHeading">documentation</p>
+                <p class="font-body text-lg text-lightGray mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, deserunt aperiam mollitia officiis voluptatibus veniam expedita nihil voluptatum ratione quae doloremque quasi recusandae sint atque perspiciatis dolores totam a dolore.</p>
+            </div>
+        </div>
+
+        <hr class="my-8 md:my-16">
+        
+        <div class="relative container p-5 md:px-6 mx-auto">
+            <div class="flex justify-start">
+                <div class="hidden md:block mr-10">
+                    <img src="./img/5.jpg" alt="" class="" width="533">
+                </div>
+                <div class="md:mr-5">
+                    <p class="text-4xl font-heading">Our Achievements</p><br>
+                    <p class="text-lg font-body text-lightGray">Make a great plan and experience better and flawless steps in choosing better instituions with us.</p><br>
+                    <div class="flex justify-between font-smallHeading text-lightGray">
+                        <p><span class="text-3xl text-[#B24016]">15+</span><br>Cities</p>
+                        <p><span class="text-3xl text-[#6D474B]">50+</span><br>Experienced<br>team</p>
+                        <p><span class="text-3xl text-[#274E7F]">10k+</span><br>Satisfied<br>Students</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-16">
+
+        <!-- Destinations -->
+
+        <div class="relative container p-5 md:px-6 mx-auto">
+            <div>
+                <p class="text-4xl font-heading">Destination</p><br>
+            </div>
+            <div class="flex flex-col flex-wrap md:flex-row justify-between">
+                <div class="flex-initial bg-white rounded-lg p-4 drop-shadow-md md:w-80 lg:w-72 lg:mr-5 md:mt-5 mb-5">
+                    <div class="flex justify-center">
+                        <img src="./img/6.jpg" alt="" class="object-cover w-full h-64 mb-5">
+                    </div>
+                    <p class="flex text-base justify-center font-smallHeading">Study in</p>
+                    <p class="flex justify-center text-xl font-semibold font-smallHeading">Germany</p>
+                </div>
+                <div class="flex-initial bg-white rounded-lg p-4 drop-shadow-md md:w-80 lg:w-72 lg:mr-5 md:mt-5 mb-5">
+                    <div class="flex justify-center">
+                        <img src="./img/8.jpg" alt="" class="object-cover w-full h-64 mb-5">
+                    </div>
+                    <p class="flex text-base justify-center font-smallHeading">Study in</p>
+                    <p class="flex justify-center text-xl font-semibold font-smallHeading">London</p>
+                </div>
+                <div class="flex-initial bg-white rounded-lg p-4 drop-shadow-md md:w-80 lg:w-72 lg:mr-5 md:mt-5 mb-5">
+                    <div class="flex justify-center">
+                        <img src="./img/9.jpg" alt="" class="object-cover w-full h-64 mb-5">
+                    </div>
+                    <p class="flex text-base justify-center font-smallHeading">Study in</p>
+                    <p class="flex justify-center text-xl font-semibold font-smallHeading">Australia</p>
+                </div>
+                <div class="flex-initial bg-white rounded-lg p-4 drop-shadow-md md:w-80 lg:w-72 md:mt-5 mb-5">
+                    <div class="flex justify-center">
+                        <img src="./img/10.jpg" alt="" class="object-cover w-full h-64 mb-5">
+                    </div>
+                    <p class="flex text-base justify-center font-smallHeading">Study in</p>
+                    <p class="flex justify-center text-xl font-semibold font-smallHeading">USA</p>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-11">
+
+        <div class="relative container mx-auto">
+            <div class="flex flex-col md:flex-row justify-around place-items-center p-6">
+                <p class="text-4xl md:w-1/2 font-heading">Let's discuss about your carrer!</p>
+                <!-- <a href="#" class="font-heading text-lg border border-2 rounded-xl border-[#9C380C] py-3 px-10 hover:text-white hover:bg-[#9C380C] transition-all duration-200">Contact us</a> -->
+                <!-- <a href="#" class="font-heading text-lg border border-2 rounded-xl border-[#9C380C] py-3 px-5 md:px-10 text-white hover:text-black bg-[#9C380C]">Contact us</a> -->
+                <button type="button" class="max-w-[172px] mt-10 md:mt-0 font-heading text-white bg-[#9C380C] rounded-lg text-lg px-5 md:px-10 py-2.5 hover:text-black">Contact us</button>
+            </div>
+        </div>
+
+        <hr class="my-8">
+
+        <div class="relative container mx-auto p-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="md:w-1/2">
+                    <div class="font-smallHeading">
+                        LOGO - Company Name
+                    </div>
+                    <p class="text-lightFont font-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti odit distinctio aliquid, fugiat illo commodi qui beatae sed numquam voluptatibus ipsa debitis saepe. Perspiciatis deserunt a, modi dolorum tempora repellendus.
+                    </p>
+                </div>
+                <div class="md:mx-5 flex flex-col md:flex-row">
+                    <div class="md:mx-10 my-10 md:my-0 flex flex-col">
+                        <h2 class="font-smallHeading font-bold">Services</h2>
+                        <a href="#" class="text-lightFont font-body hover:text-hover">Tours and travells</a>
+                        <a href="#" class="text-lightFont font-body hover:text-hover">Remittance</a>
+                        <a href="./education.html" class="text-lightFont font-body hover:text-hover">Education consultancy</a>
+                    </div>   
+                    <div class="md:mx-auto">
+                        <h2 class="font-smallHeading font-bold">Info</h2>
+                        <p class="text-lightFont font-body">
+                            infoalhaizum.com<br>
+                            +977-xxx<br>
+                            xyz@gmail.com<br>
+                            Baneshowr, Kathmandu
+                        </p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="p-2 bg-lightGray text-white">
+            <div class="lg:container lg:mx-auto flex flex-col md:flex-row items-center justify-between">   
+                <!-- Footer Items -->
+                <div class="flex flex-wrap justify-center stroke">
+                    <a href="#" class="hover:text-hover">About us</a>
+                    <a href="#" class="ml-10 hover:text-hover">Contact us</a>
+                    <a href="#" class="ml-10 hover:text-hover">Privacy policy</a>
+                    <a href="#" class="md:ml-10 py-5 md:py-0 hover:text-hover">Terms and conditions</a>
+                </div>
+                <div class="flex space-x-6 mt-5 md:mt-0">
+                    &copy; 2022 Alhizum - All Rights Reserved
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/input.js"></script>
+</body>
+</html>
