@@ -26,13 +26,13 @@ var slider = tns({
   autoplay: true,
   autoplayButtonOutput: false,
   // mode: 'gallery',
-  speed: 1500,
+  speed: 1000,
   // animateIn: "scale",
   // controls: false,
   controlsContainer: "#custom-control",
   nav: false,
   // edgePadding: 20,
-  loop: false,
+  // loop: false,
   responsive:{
     250:{
       items:2,
@@ -42,7 +42,7 @@ var slider = tns({
     },
     960:{
       items:5,
-    }
+    },
   }
 });
 
@@ -55,7 +55,7 @@ var slider2 = tns({
   autoplay: true,
   autoplayButtonOutput: false,
   // mode: 'gallery',
-  speed: 1500,
+  speed: 1000,
   // animateIn: "scale",
   // controls: false,
   controlsContainer: "#custom-control-2",

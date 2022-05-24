@@ -9,7 +9,7 @@
     <title>About</title>
 </head>
 <body>
-    <div class="min-h-screen flex flex-col justify-between bg-background">
+    <div class="min-h-screen flex flex-col justify-between bg-background overflow-hidden">
         <!-- Navbar -->
         <nav class="relative container mx-auto p-4">
             <!-- Flex Container -->
@@ -66,7 +66,7 @@
         </nav>
 
         <!-- Content Wrapper -->
-        <div class="container mx-auto p-5 mt-5 md:px-6">
+        <div class="container relative mx-auto p-5 mt-5 md:px-6">
             <div class="flex relative flex-col items-center">
                 <img src="./img/svg-1.png" alt="" class="svg1 absolute h-[40px] w-[40px]">
                 <img src="./img/svg-2.png" alt="" class="svg2 absolute h-[50px] w-[50px]">
@@ -74,20 +74,96 @@
                 <p class="font-heading text-4xl">Providing Service in one site</p>
                 <p class="font-body font-base text-[#808080]">Make a great plan and experience better and flawless steps in choosing better instituions with us.</p>
             </div>
-            <div class="flex justify-between">
-                <div>
-                    <img src="" alt="" class="object-cover">
+            <div class="flex flex-wrap px-5 mt-20 justify-center md:justify-between">
+                <a href="./remittance.html">
+                    <div class="relative img-img overflow-hidden rounded-xl">
+                        <img src="./img/about-1.jpg" alt="" class="w-[300px] h-[185px] object-cover">
+                        <div class="img-overlay"></div>
+                        <p class="img-caption font-smallHeading text-white text-lg">Remittance</p>
+                    </div>
+                </a>
+                <a href="./education.html" class="mt-10 md:mt-0">
+                    <div class="relative img-img overflow-hidden rounded-xl">
+                        <img src="./img/about-2.jpg" alt="" class="w-[300px] h-[185px] object-cover">
+                        <div class="img-overlay rounded-xl"></div>
+                        <p class="img-caption font-smallHeading text-white text-lg">Education Consultancy</p>
+                    </div>
+                </a>
+                <a href="#" class="mt-10 md:mt-0">
+                    <div class="relative img-img md:mt-10 lg:mt-0 overflow-hidden rounded-xl">
+                        <img src="./img/about-3.jpg" alt="" class="w-[300px] h-[185px] object-cover">
+                        <div class="img-overlay rounded-xl"></div>
+                        <p class="img-caption font-smallHeading text-white text-lg"><span class="ml-[25px]">Tours</span> <br>and Travels</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <hr class="my-8">
+
+        <!-- What we? -->
+
+        <div class="container mx-auto 3xl:max-w-full 3xl:px-72 p-5 py-20 md:px-11 dark-container">
+            <div class="flex flex-col md:flex-row justify-around px-5 3xl:px-0">
+                <div class="flex flex-col w-full md:w-1/2 md:mr-10">
+                    <p class="text-3xl font-smallHeading">1.</p>
+                    <p class="text-2xl font-smallHeading mt-5">Who we are?</p>
+                    <p class="font-body font-base text-[#808080] mt-2">Make a great plan and experience better and flawless steps in choosing better instituions with us.</p>
                 </div>
-                <div>
-                    <img src="" alt="" class="object-cover">
+                <div class="flex flex-col w-full md:w-1/2 mt-16 md:mt-0">
+                    <p class="text-3xl font-smallHeading">2.</p>
+                    <p class="text-2xl font-smallHeading mt-5">What we do?</p>
+                    <p class="font-body font-base text-[#808080] mt-2">Make a great plan and experience better and flawless steps in choosing better instituions with us.</p>
                 </div>
-                <div>
-                    <img src="" alt="" class="object-cover">
+            </div>
+            <div class="flex flex-col md:flex-row justify-between mt-16 px-5 3xl:px-0">
+                <div class="flex flex-col w-full md:w-1/2 md:mr-10">
+                    <p class="text-3xl font-smallHeading">3.</p>
+                    <p class="text-2xl font-smallHeading mt-5">How we help?</p>
+                    <p class="font-body font-base text-[#808080] mt-2">Make a great plan and experience better and flawless steps in choosing better instituions with us.</p>
+                </div>
+                <div class="flex flex-col w-full md:w-1/2 mt-16 md:mt-0">
+                    <p class="text-3xl font-smallHeading">4.</p>
+                    <p class="text-2xl font-smallHeading mt-5">Why to choose us?</p>
+                    <p class="font-body font-base text-[#808080] mt-2">Make a great plan and experience better and flawless steps in choosing better instituions with us.</p>
                 </div>
             </div>
         </div>
 
         <hr class="my-8">
+
+        <!-- Our Team -->
+
+        <div class="container mx-auto p-5 md:px-11">
+            <div class="flex justify-center">
+                <p class="text-4xl font-heading">Meet our team</p>
+            </div>
+            <div class="flex flex-col md:flex-row justify-center mt-14">
+                <div class="flex flex-col items-center md:mr-12 lg:mr-24">
+                    <div class="rounded-full h-[180px] w-[180px] overflow-hidden">
+                        <img src="./img/alexander.jpg" alt="" class="object-cover">
+                    </div>
+                    <p class="font-smallHeading text-base mt-5">Alexander gardener</p>
+                    <p class="text-sm font-smallHeading text-[#808080]">(Founder)</p>
+                </div>
+                <div class="flex flex-col items-center mt-16 md:mt-0 md:mr-12 lg:mr-24">
+                    <div class="rounded-full h-[180px] w-[180px] overflow-hidden">
+                        <img src="./img/marques.jpg" alt="" class="object-cover">
+                    </div>  
+                    <p class="font-smallHeading text-base mt-5">Marques Brownlee</p>
+                    <p class="text-sm font-smallHeading text-[#808080]">(CEO)</p>
+                </div>
+                <div class="flex flex-col items-center mt-16 md:mt-0">
+                    <div class="rounded-full h-[180px] w-[180px] overflow-hidden">
+                        <img src="./img/jack.jpg" alt="" class="object-cover">
+                    </div>
+                    <p class="font-smallHeading text-base mt-5">Jack White</p>
+                    <p class="text-sm font-smallHeading text-[#808080]">(Co-founder)</p>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-10">
 
         <div class="relative container mx-auto p-6">
             <div class="flex flex-col md:flex-row justify-between">
@@ -103,7 +179,7 @@
                     <div class="md:mx-10 my-10 md:my-0 flex flex-col">
                         <h2 class="font-smallHeading font-bold">Services</h2>
                         <a href="#" class="text-lightFont font-body hover:text-hover">Tours and travells</a>
-                        <a href="#" class="text-lightFont font-body hover:text-hover">Remittance</a>
+                        <a href="./remittance.html" class="text-lightFont font-body hover:text-hover">Remittance</a>
                         <a href="./education.html" class="text-lightFont font-body hover:text-hover">Education consultancy</a>
                     </div>   
                     <div class="md:mx-auto">
@@ -124,8 +200,8 @@
             <div class="lg:container lg:mx-auto flex flex-col md:flex-row items-center justify-between">   
                 <!-- Footer Items -->
                 <div class="flex flex-wrap justify-center stroke">
-                    <a href="#" class="hover:text-hover">About us</a>
-                    <a href="#" class="ml-10 hover:text-hover">Contact us</a>
+                    <a href="./about.html" class="hover:text-hover">About us</a>
+                    <a href="./contact.html" class="ml-10 hover:text-hover">Contact us</a>
                     <a href="#" class="ml-10 hover:text-hover">Privacy policy</a>
                     <a href="#" class="md:ml-10 py-5 md:py-0 hover:text-hover">Terms and conditions</a>
                 </div>

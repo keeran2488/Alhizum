@@ -7,6 +7,7 @@ module.exports = {
       'lg': '960px',
       'xl': '1140px',
       '2xl': '1320px',
+      '3xl': '1400px',
     },
     fontFamily:{
       'heading':['Sen-Regular', 'sans-serif'],
