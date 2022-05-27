@@ -5,19 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"> -->
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
 </head>
 <body>
-    <!-- <div class="container md:p-6 mx-auto">
-        <div class="flex justify-center p-5">
-            <img src="./img/mobile-money.png" alt="" class="self-end h-[60px] w-[60px] mr-5">
-            <p class="text-2xl font-heading self-end">Mobile money networks</p><br>
-        </div>
-        <div class="flex justify-center">
-            <div class="relative h-28 w-[620px] pt-4 px-16 border-[0.25pt] border-black rounded-2xl bg-[#F2F2F2]">
-                <ul class="control" id="custom-control-2">
+    
+    <!-- <div id="learn-more" class="container bg-red-100 p-5 md:px-6 mx-auto">
+        
+        <div class="destination-container mt-14 flex justify-center">
+            <div class="h-28 w-full pt-4 px-16">
+                <ul class="control" id="custom-control-travel">
                     <li class="prev">
                         <i class="fa-solid fa-chevron-left"></i>
                     </li>
@@ -25,24 +24,46 @@
                         <i class="fa-solid fa-chevron-right"></i>
                       </li>
                 </ul>
-                <div class="my-slider-2">
-                    <img src="./img/cityexpress.png" alt="" class="h-20 w-32">
-                    <img src="./img/himalremit.png" alt="" class="h-20 w-32">
-                    <img src="./img/IME.png" alt="" class="h-20 w-32">
-                    <img src="./img/moneygram.png" alt="" class="h-20 w-32">
-                    <img src="./img/prabhumoney.png" alt="" class="h-20 w-32">
-                    <img src="./img/western.png" alt="" class="h-20 w-32">
+                <div class="my-slider-travel">
+                    <div class="w-full">
+                        <img src="./img/travel-2.jpg" alt="" class="rounded-lg h-[338px] ml-20 w-52 overflow-hidden object-cover">
+                    </div>
+                    <div class="">   
+                        <img src="./img/travel-3.jpg" alt="" class="rounded-xl overflow-hidden object-cover ml-20 h-[338px] w-52">
+                    </div>
+                    <div class="">
+                        <img src="./img/travel-4.jpg" alt="" class="rounded-xl overflow-hidden object-cover ml-20 h-[338px] w-52">
+                    </div>
+                    <div class="">
+                        <img src="./img/travel-5.jpg" alt="" class="rounded-xl overflow-hidden object-cover ml-20 h-[338px] w-52">
+                    </div>
                 </div>
             </div>
         </div>
-        
+    </div> -->
+    <div class="container mx-auto">
+        <div class="md:mr-5 flex justify-center mb-10">
+            <p class="text-4xl font-heading">Explore top destinations</p><br>                       
+        </div>
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides justify-center items-end">
+                    <li class="glide__slide"><img src="./img/travel-3.jpg" alt="" class="rounded-xl overflow-hidden object-cover w-52 h-[338px]"></li>
+                    <li class="glide__slide"><img src="./img/travel-2.jpg" alt="" class="rounded-lg overflow-hidden object-cover w-52 h-[338px]"></li>
+                    <li class="glide__slide"><img src="./img/travel-4.jpg" alt="" class="rounded-xl overflow-hidden object-cover w-52 h-[338px]"></li>
+                    <li class="glide__slide"><img src="./img/travel-5.jpg" alt="" class="rounded-xl overflow-hidden object-cover w-52 h-[338px]"></li>
+                </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>               
+        </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-    <script src="./test.js"></script> -->
-
-    <div class="relative img-overlay">
-        <img src="./img/about-1.jpg" alt="" class="w-[300px] h-[185px] object-cover rounded-xl ">
-        <p class="img-caption font-smallHeading text-red-600 text-lg">Remittance</p>
-    </div>
+    
+      
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="./test.js"></script>
 </body>
 </html>

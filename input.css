@@ -159,10 +159,11 @@
     position: absolute;
     z-index: 99;
     color: white;
-    transform: translateY(80%);
+    transform: translateY(480%);
     padding: 3px 10px;
     border-width: 1px;
     border-radius: 50%;
+    /* bottom: -/100px; */
     cursor: pointer;
 }
 
@@ -250,4 +251,90 @@
     max-width: fit-content;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.10);
+}
+
+
+.hero-image{
+    background-image: url('../img/travel-1.jpg');
+    position: relative;
+    height: 100vh;
+    max-width: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+}
+
+
+/* Top destinations */
+
+.glide__slide--active{
+    opacity: 0.9;
+    height: 388px!important;
+}
+
+.glide__slide--active img{
+    height: 100%;
+    width: 248px;
+}
+
+li.glide__slide{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Slider controls - GlideJs */
+.glide__arrows button {
+    position: absolute;
+    z-index: 99;
+    color: white;
+    transform: translateY(-540%);
+    padding: 3px 10px;
+    border-width: 1px;
+    border-radius: 50%;
+    /* bottom: -/100px; */
+    cursor: pointer;
+}
+
+.fa-solid{
+    color: black;
+}
+
+/* .control li:hover {
+    background: #000;
+} */
+
+.glide__arrow--left {
+    left: 10px;
+}
+
+.glide__arrow--right {
+    right: 10px;
+}
+
+/* Air ticketing serivce */
+.air-ticket-img-1{
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-20%);
+}
+
+.air-ticket-img-2{
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.air-ticket-img-3{
+    position: absolute;
+    z-index: 3;
+    right: 0px;
+    bottom: 0;
+    /* transform: translateY(0%); */
+    transform: translateX(-50%);
 }
