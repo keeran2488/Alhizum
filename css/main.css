@@ -646,16 +646,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 3.5rem;
 }
 
-.mr-\[4\.5rem\] {
-  margin-right: 4.5rem;
-}
-
 .mb-12 {
   margin-bottom: 3rem;
 }
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
 }
 
 .block {
@@ -1254,6 +1254,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(39 78 127 / var(--tw-text-opacity));
 }
 
+.text-red-400 {
+  --tw-text-opacity: 1;
+  color: rgb(248 113 113 / var(--tw-text-opacity));
+}
+
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
 .placeholder-gray-400::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(156 163 175 / var(--tw-placeholder-opacity));
@@ -1566,7 +1576,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 /* Top destinations */
 
 .glide__slide--active{
-  opacity: 0.9;
   height: 388px!important;
 }
 
@@ -1588,8 +1597,6 @@ li.glide__slide{
   color: white;
   transform: translateY(-540%);
   padding: 3px 10px;
-  border-width: 1px;
-  border-radius: 50%;
   /* bottom: -/100px; */
   cursor: pointer;
 }
@@ -1603,11 +1610,31 @@ li.glide__slide{
 } */
 
 .glide__arrow--left {
-  left: 10px;
+  left: 20px;
 }
 
 .glide__arrow--right {
   right: 10px;
+}
+
+@media only screen and (max-width: 720px){
+  .glide__arrow--left {
+    left: 10px;
+  }
+
+  .glide__arrow--right {
+    right: 0px;
+  }
+}
+
+@media only screen and (max-width: 960px){
+  .glide__arrow--left {
+    left: -30px;
+  }
+
+  .glide__arrow--right {
+    right: -40px;
+  }
 }
 
 /* Air ticketing serivce */
@@ -1790,6 +1817,10 @@ li.glide__slide{
     justify-content: space-between;
   }
 
+  .md\:justify-around {
+    justify-content: space-around;
+  }
+
   .md\:p-0 {
     padding: 0px;
   }
@@ -1883,6 +1914,14 @@ li.glide__slide{
     margin-right: 1.25rem;
   }
 
+  .lg\:mr-\[4\.5rem\] {
+    margin-right: 4.5rem;
+  }
+
+  .lg\:block {
+    display: block;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -1929,6 +1968,10 @@ li.glide__slide{
 
   .lg\:w-\[620px\] {
     width: 620px;
+  }
+
+  .lg\:basis-1\/2 {
+    flex-basis: 50%;
   }
 
   .lg\:flex-row {

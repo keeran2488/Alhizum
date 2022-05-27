@@ -5,4 +5,9 @@ new Glide('.glide', {
   // gap: 40,
   autoplay: 2000,
   focusAt: 'center',
+  breakpoints: {
+    720: {
+      perView: 1,
+    }
+  },
 }).mount()

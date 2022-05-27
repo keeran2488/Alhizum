@@ -269,7 +269,6 @@
 /* Top destinations */
 
 .glide__slide--active{
-    opacity: 0.9;
     height: 388px!important;
 }
 
@@ -283,7 +282,6 @@ li.glide__slide{
     justify-content: center;
 }
 
-
 /* Slider controls - GlideJs */
 .glide__arrows button {
     position: absolute;
@@ -291,8 +289,6 @@ li.glide__slide{
     color: white;
     transform: translateY(-540%);
     padding: 3px 10px;
-    border-width: 1px;
-    border-radius: 50%;
     /* bottom: -/100px; */
     cursor: pointer;
 }
@@ -306,11 +302,31 @@ li.glide__slide{
 } */
 
 .glide__arrow--left {
-    left: 10px;
+    left: 20px;
 }
 
 .glide__arrow--right {
     right: 10px;
+}
+
+@media only screen and (max-width: 720px){
+    .glide__arrow--left {
+        left: 10px;
+    }
+
+    .glide__arrow--right {
+        right: 0px;
+    }
+}
+
+@media only screen and (max-width: 960px){
+    .glide__arrow--left {
+        left: -30px;
+    }
+
+    .glide__arrow--right {
+        right: -40px;
+    }
 }
 
 /* Air ticketing serivce */
