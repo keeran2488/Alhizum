@@ -2,6 +2,8 @@ const btn = document.getElementById('menu-btn')
 const nav = document.getElementById('menu')
 const dropdown_btn = document.getElementById('dropdown-btn')
 const dropdown = document.getElementById('dropdown-menu')
+const dropdown_touch = document.getElementById('dropdown-touch')
+const dropdown_menu_hover = document.getElementById('dropdown-menu-hover')
 
 
 btn.addEventListener('click', () => {
@@ -15,6 +17,11 @@ dropdown_btn.addEventListener('click',()=>{
     dropdown.classList.toggle('block')
     dropdown.classList.toggle('hidden')
     
+})
+
+dropdown_touch.addEventListener('click', ()=>{
+  dropdown_menu_hover.classList.toggle('block')
+  dropdown_menu_hover.classList.toggle('hidden')
 })
 
 var slider = tns({
