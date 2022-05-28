@@ -630,6 +630,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 2.5rem;
 }
 
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
 .mt-\[4\.5rem\] {
   margin-top: 4.5rem;
 }
@@ -652,10 +656,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-4 {
   margin-bottom: 1rem;
-}
-
-.mb-3 {
-  margin-bottom: 0.75rem;
 }
 
 .block {
@@ -782,14 +782,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 50%;
 }
 
-.w-24 {
-  width: 6rem;
-}
-
 .w-fit {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.w-24 {
+  width: 6rem;
 }
 
 .w-\[208px\] {
@@ -1258,26 +1258,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(39 78 127 / var(--tw-text-opacity));
 }
 
-.text-red-400 {
-  --tw-text-opacity: 1;
-  color: rgb(248 113 113 / var(--tw-text-opacity));
-}
-
-.text-red-500 {
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
-}
-
-.text-\[\#2490d8\] {
-  --tw-text-opacity: 1;
-  color: rgb(36 144 216 / var(--tw-text-opacity));
-}
-
-.text-buttonBorder {
-  --tw-text-opacity: 1;
-  color: rgb(1 90 151 / var(--tw-text-opacity));
-}
-
 .text-\[\#015A97\] {
   --tw-text-opacity: 1;
   color: rgb(1 90 151 / var(--tw-text-opacity));
@@ -1534,6 +1514,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   .svg2{
     transform: translateY(160%);
     right: 30px;
+    bottom: 48px;
   }
 }
 
@@ -1840,10 +1821,6 @@ li.glide__slide{
     justify-content: space-between;
   }
 
-  .md\:justify-around {
-    justify-content: space-around;
-  }
-
   .md\:p-0 {
     padding: 0px;
   }
@@ -1991,14 +1968,6 @@ li.glide__slide{
 
   .lg\:w-\[620px\] {
     width: 620px;
-  }
-
-  .lg\:w-\[700px\] {
-    width: 700px;
-  }
-
-  .lg\:w-\[800px\] {
-    width: 800px;
   }
 
   .lg\:w-\[900px\] {
