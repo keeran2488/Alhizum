@@ -844,6 +844,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-basis: 50%;
 }
 
+.list-disc {
+  list-style-type: disc;
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -1264,6 +1268,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
+.text-\[\#2490d8\] {
+  --tw-text-opacity: 1;
+  color: rgb(36 144 216 / var(--tw-text-opacity));
+}
+
+.text-buttonBorder {
+  --tw-text-opacity: 1;
+  color: rgb(1 90 151 / var(--tw-text-opacity));
+}
+
+.text-\[\#015A97\] {
+  --tw-text-opacity: 1;
+  color: rgb(1 90 151 / var(--tw-text-opacity));
+}
+
 .placeholder-gray-400::-moz-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(156 163 175 / var(--tw-placeholder-opacity));
@@ -1282,6 +1301,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.outline {
+  outline-style: solid;
 }
 
 .drop-shadow-md {
@@ -1968,6 +1991,18 @@ li.glide__slide{
 
   .lg\:w-\[620px\] {
     width: 620px;
+  }
+
+  .lg\:w-\[700px\] {
+    width: 700px;
+  }
+
+  .lg\:w-\[800px\] {
+    width: 800px;
+  }
+
+  .lg\:w-\[900px\] {
+    width: 900px;
   }
 
   .lg\:basis-1\/2 {
