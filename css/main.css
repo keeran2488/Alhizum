@@ -828,6 +828,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 172px;
 }
 
+.max-w-full {
+  max-width: 100%;
+}
+
 .flex-initial {
   flex: 0 1 auto;
 }
@@ -1469,7 +1473,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: absolute;
   z-index: 99;
   color: white;
-  transform: translateY(480%);
+  transform: translateY(75%);
   padding: 3px 10px;
   border-width: 1px;
   border-radius: 50%;
@@ -1641,31 +1645,53 @@ li.glide__slide{
   }
 }
 
-/* Air ticketing serivce */
-
+/* Air ticketing serivce
 .air-ticket-img-1{
-  position: absolute;
-  z-index: 1;
-  left: 0px;
-  top: 50%;
-  transform: translateY(-20%);
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-20%);
 }
 
 .air-ticket-img-2{
-  position: absolute;
-  z-index: 2;
-  top: 0px;
-  right: 50%;
-  transform: translateX(50%);
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    right: 50%;
+    transform: translateX(50%);
 }
 
 .air-ticket-img-3{
+    position: absolute;
+    z-index: 3;
+    right: 0px;
+    bottom: 0;
+    transform: translateY(0%);
+    transform: translateX(-50%);
+} */
+
+/* Panorama */
+
+.panorama-text-1{
   position: absolute;
-  z-index: 3;
-  right: 0px;
-  bottom: 0;
-  /* transform: translateY(0%); */
-  transform: translateX(-50%);
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+}
+
+.panorama-text-2{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+
+.panorama-text-3{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -70%);
 }
 
 .hover\:bg-hover:hover {

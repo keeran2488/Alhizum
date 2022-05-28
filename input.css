@@ -159,7 +159,7 @@
     position: absolute;
     z-index: 99;
     color: white;
-    transform: translateY(480%);
+    transform: translateY(75%);
     padding: 3px 10px;
     border-width: 1px;
     border-radius: 50%;
@@ -330,7 +330,7 @@ li.glide__slide{
     }
 }
 
-/* Air ticketing serivce */
+/* Air ticketing serivce
 .air-ticket-img-1{
     position: absolute;
     z-index: 1;
@@ -352,6 +352,30 @@ li.glide__slide{
     z-index: 3;
     right: 0px;
     bottom: 0;
-    /* transform: translateY(0%); */
+    transform: translateY(0%);
     transform: translateX(-50%);
+} */
+
+
+/* Panorama */
+
+.panorama-text-1{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+}
+
+.panorama-text-2{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+
+.panorama-text-3{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
 }
