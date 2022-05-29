@@ -149,6 +149,16 @@
     transform: rotate(-90deg);
 } */
 
+/* Dropdown onTap */
+.dropdown-menu-test{
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+
 
 /* Slider controls */
 .control {
