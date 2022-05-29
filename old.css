@@ -1,0 +1,62 @@
+/* Slider controls - GlideJs */
+.glide__arrows button {
+    position: absolute;
+    z-index: 99;
+    color: white;
+    transform: translateY(-580%);
+    padding: 3px 10px;
+    /* bottom: -/100px; */
+    cursor: pointer;
+}
+
+.fa-solid{
+    color: black;
+}
+
+/* .control li:hover {
+    background: #000;
+} */
+
+.glide__arrow--left {
+    left: 20px;
+}
+
+.glide__arrow--right {
+    right: 10px;
+}
+
+@media only screen and (max-width: 540px){
+    .glide__arrow--left {
+        left: 10px;
+        background-color: red;
+    }
+
+    .glide__arrow--right {
+        right: 0px;
+        background-color: red;
+    }
+}
+
+@media only screen and (max-width: 720px){
+    .glide__arrow--left {
+        background-color: blue;
+        left: 10px;
+    }
+
+    .glide__arrow--right {
+        right: 0px;
+        background-color: blue;
+    }
+}
+
+@media only screen and (max-width: 960px){
+    .glide__arrow--left {
+        left: -30px;
+        background-color: yellow;
+    }
+
+    .glide__arrow--right {
+        right: -40px;
+        background-color: yellow;
+    }
+}
