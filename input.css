@@ -264,6 +264,213 @@
     background-color: rgba(0, 0, 0, 0.10);
 }
 
+.two-color-container{
+    /* max-width: 100%; */
+    max-width: fit-content;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 50%, #E8E8E8 50%, #E8E8E8 100%);
+}
+
+/* Testimonial */
+
+.testimonial-container{
+    max-width: 100%;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 70%, #E8E8E8 70%, #E8E8E8 100%);
+}
+
+.comment-card{
+    position: absolute;
+    /* opacity: 0.75; */
+    background-color: #9fc9c2c9;
+    height: 250px;
+    width: 450px;
+    top: 20%;
+    /* bottom: 50%; */
+    right: 5%;
+    /* transform: translate(50%,0%); */
+}
+
+@media only screen and (min-width: 1400px) {
+    .comment-card{
+        position: absolute;
+        /* opacity: 0.75; */
+        background-color: #9fc9c2c9;
+        height: 250px;
+        width: 450px;
+        top: 20%;
+        /* bottom: 50%; */
+        right: 10%;
+        /* transform: translate(50%,0%); */
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .testimonial-container{
+        max-width: 100%;
+        width: 100%;
+        height: 400px;
+        background: rgba(0, 0, 0, 0.10)
+    }
+    
+    .comment-card{
+        position: relative;
+        background-color: #9fc9c2c9;
+        height: 100%;
+        width: 100%;
+    }
+
+    .comment-arrow-left{
+        top: 0px;
+        cursor: pointer;
+    }
+    
+    .comment-arrow-right{
+        top: 100px;
+        cursor: pointer;
+    }
+}
+
+.comment-arrow-left{
+    padding: 3px 10px;
+    border-width: 1px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    right: 20%;
+    top: -40px;
+    cursor: pointer;
+}
+
+.comment-arrow-right{
+    padding: 3px 10px;
+    border-width: 1px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    right: 10%;
+    top: -40px;
+    cursor: pointer;
+}
+
+.comment-quote-top{
+    /* position: absolute; */
+}
+
+.comment-quote-bottom{
+    /* position: absolute;
+    bottom: -40px;
+    right: 0px; */
+}
+
+/* Home image */
+
+.remittance-image p{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+}
+
+.remittance-image:hover p{
+    z-index: 99;
+    display: block;
+}
+
+.remittance-image:hover img{
+    filter: blur(1px);
+}
+
+.remittance-image:hover .img-overlay-circle{
+    display: block;
+}
+
+.tours-image p{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+}
+
+.tours-image:hover p{
+    z-index: 99;
+    display: block;
+}
+
+.tours-image:hover img{
+    filter: blur(1px);
+}
+
+.tours-image:hover .img-overlay-circle{
+    display: block;
+}
+
+.education-image p{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+
+.education-image:hover p{
+    z-index: 99;
+    display: block;
+}
+
+.education-image:hover img{
+    filter: blur(1px);
+}
+
+.education-image:hover .img-overlay-circle{
+    display: block;
+}
+
+.img-overlay-circle {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.356);
+}
+
+@media (pointer:coarse) {
+    .remittance-image p{
+        display: block;
+        z-index: 99;
+    }
+
+    .remittance-image img{
+        filter: blur(1px);
+    }
+
+    .tours-image p{
+        display: block;
+        z-index: 99;
+    }
+
+    .tours-image img{
+        filter: blur(1px);
+    }
+
+    .education-image p{
+        display: block;
+        z-index: 99;
+    }
+
+    .education-image img{
+        filter: blur(1px);
+    }
+
+    .img-overlay-circle {
+        display: block;
+    }
+}
 
 .hero-image{
     background-image: url('../img/travel-1.jpg');

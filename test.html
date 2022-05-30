@@ -8,62 +8,64 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"> -->
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <!-- <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"> -->
 </head>
 <body>
     
-    <!-- <div id="learn-more" class="container bg-red-100 p-5 md:px-6 mx-auto">
-        
-        <div class="destination-container mt-14 flex justify-center">
-            <div class="h-28 w-full pt-4 px-16">
-                <ul class="control" id="custom-control-travel">
-                    <li class="prev">
-                        <i class="fa-solid fa-chevron-left"></i>
-                    </li>
-                    <li class="next">
-                        <i class="fa-solid fa-chevron-right"></i>
-                      </li>
-                </ul>
-                <div class="my-slider-travel">
-                    <div class="w-full">
-                        <img src="./img/travel-2.jpg" alt="" class="rounded-lg h-[338px] ml-20 w-52 overflow-hidden object-cover">
+    <div class="relative container mx-auto 3xl:max-w-full 3xl:px-72 p-5 py-10 md:px-11 testimonial-container">
+        <div class="flex flex-col content-center w-[600px]">
+            <div class="mt-10">
+                <p class="font-heading text-4xl">This is what our customer says...<br><br></p>
+                <p class="font-body text-lg text-lightGray">Make a great plan and experience better and flawless steps in choosing better instituions with us.</p>
+            </div>
+        </div>
+        <div class="mt-10">
+            <div class="comment-card rounded-2xl p-4">
+                <div class="comment-arrow-left" onclick="prevComment()"><i class="fa-solid fa-chevron-left"></i></div>
+                <div class="comment-arrow-right" onclick="nextComment()"><i class="fa-solid fa-chevron-right"></i></div>
+                <div id="all-comments" class="flex flex-col justify-between h-full">
+                    <div id="comment-0" class="">
+                        <div class="relative">
+                            <div class="comment-quote-top"><img src="./img/quote-top.png" alt=""></div>
+                            <p class="font-body text-lg text-[#4D4D4D]">If I’ve made one investment that’s truly paid off, it would be paying for Alhaizum. Love the work that I get from there.</p>
+                            <div class="comment-quote-bottom flex flex-row justify-end"><img src="./img/quote-bottom.png" alt=""></div>
+                        </div>
+                        <div class="flex flex-row">
+                            <img src="./img/nezuko.webp" alt="" class="object-cover rounded-full h-9 w-9 mr-5">
+                            <p class="font-body text-base text-[#333333]">Henry Habim</p>
+                        </div>
                     </div>
-                    <div class="">   
-                        <img src="./img/travel-3.jpg" alt="" class="rounded-xl overflow-hidden object-cover ml-20 h-[338px] w-52">
+                    <div id="comment-1" class="hidden">
+                        <div class="relative">
+                            <div class="comment-quote-top"><img src="./img/quote-top.png" alt=""></div>
+                            <p class="font-body text-lg text-[#4D4D4D]">If I’ve made one investment that’s truly paid off, it would be paying for Alhaizum. Love the work that I get from there.</p>
+                            <div class="comment-quote-bottom flex flex-row justify-end"><img src="./img/quote-bottom.png" alt=""></div>
+                        </div>
+                        <div class="flex flex-row">
+                            <img src="./img/nezuko.webp" alt="" class="object-cover rounded-full h-9 w-9 mr-5">
+                            <p class="font-body text-base text-[#333333]">Henry Habim - 2</p>
+                        </div>
                     </div>
-                    <div class="">
-                        <img src="./img/travel-4.jpg" alt="" class="rounded-xl overflow-hidden object-cover ml-20 h-[338px] w-52">
-                    </div>
-                    <div class="">
-                        <img src="./img/travel-5.jpg" alt="" class="rounded-xl overflow-hidden object-cover ml-20 h-[338px] w-52">
+                    <div id="comment-2" class="hidden">
+                        <div class="relative">
+                            <div class="comment-quote-top"><img src="./img/quote-top.png" alt=""></div>
+                            <p class="font-body text-lg text-[#4D4D4D]">If I’ve made one investment that’s truly paid off, it would be paying for Alhaizum. Love the work that I get from there.</p>
+                            <div class="comment-quote-bottom flex flex-row justify-end"><img src="./img/quote-bottom.png" alt=""></div>
+                        </div>
+                        <div class="flex flex-row">
+                            <img src="./img/nezuko.webp" alt="" class="object-cover rounded-full h-9 w-9 mr-5">
+                            <p class="font-body text-base text-[#333333]">Henry Habim - 3</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div> -->
-    <div class="container mx-auto">
-        <div class="md:mr-5 flex justify-center mb-10">
-            <p class="text-4xl font-heading">Explore top destinations</p><br>                       
-        </div>
-        <div class="glide">
-            <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides justify-center items-end">
-                    <li class="glide__slide"><img src="./img/travel-3.jpg" alt="" class="rounded-xl overflow-hidden object-cover w-52 h-[338px]"></li>
-                    <li class="glide__slide"><img src="./img/travel-2.jpg" alt="" class="rounded-lg overflow-hidden object-cover w-52 h-[338px]"></li>
-                    <li class="glide__slide"><img src="./img/travel-4.jpg" alt="" class="rounded-xl overflow-hidden object-cover w-52 h-[338px]"></li>
-                    <li class="glide__slide"><img src="./img/travel-5.jpg" alt="" class="rounded-xl overflow-hidden object-cover w-52 h-[338px]"></li>
-                </ul>
-            </div>
-            <div class="glide__arrows" data-glide-el="controls">
-                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fa-solid fa-chevron-left"></i></button>
-                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fa-solid fa-chevron-right"></i></button>
-            </div>               
-        </div>
     </div>
+
     
       
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script> -->
     <script src="./test.js"></script>
 </body>
 </html>
